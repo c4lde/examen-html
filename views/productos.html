@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMarket | Productos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+    <header class="cabecera">
+        <a href="../index.html" class="logo">
+            <img src="../img/icons/hoja.svg" alt="">
+            EcoMarket
+        </a>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html" class="activo">Productos</a></li>
+                <li><a href="sobre-nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="accesos">
+            <a href="productos.html"><img src="../img/icons/buscar.svg" alt="Buscar"></a>
+            <a href="#"><img src="../img/icons/carrito.svg" alt="Carrito"></a>
+        </div>
+    </header>
+
+    <main class="catalogo">
+        <div class="catalogo-encabezado">
+            <div>
+                <h1>Nuestros productos</h1>
+                <p>Mostrando 20 productos sostenibles</p>
+            </div>
+
+            <label class="buscador">
+                <img src="../img/icons/buscar.svg" alt="">
+                <input type="search" placeholder="Buscar productos..." aria-label="Buscar productos">
+            </label>
+        </div>
+
+        <div class="catalogo-contenido">
+            <aside class="filtros">
+                <div class="filtro">
+                    <h2>Categorías</h2>
+                    <label><input type="checkbox" checked> Todas</label>
+                    <label><input type="checkbox"> Hogar</label>
+                    <label><input type="checkbox"> Moda</label>
+                    <label><input type="checkbox"> Cuidado personal</label>
+                    <label><input type="checkbox"> Alimentos</label>
+                </div>
+
+                <div class="filtro">
+                    <h2>Precio</h2>
+                    <input type="range" min="0" max="100000" value="60000" aria-label="Precio máximo">
+                    <div class="filtro-precios">
+                        <span>$0</span>
+                        <span>$100.000</span>
+                    </div>
+                </div>
+
+                <div class="filtro">
+                    <h2>Disponibilidad</h2>
+                    <label><input type="radio" name="stock" checked> Todos</label>
+                    <label><input type="radio" name="stock"> En stock</label>
+                    <label><input type="radio" name="stock"> Agotados</label>
+                </div>
+            </aside>
+
+            <div>
+                <div class="productos-grid">
+                    <article class="producto" id="p1">
+                        <div class="producto-imagen">
+                            <img src="../img/products/cepillo.jpg" alt="Cepillo de dientes de bambú">
+                            <span class="etiqueta">En stock</span>
+                            <a href="#p1" class="favorito" aria-label="Agregar a favoritos">♥</a>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Cuidado personal</span>
+                            <h3>Cepillo de bambú</h3>
+                            <div class="producto-pie">
+                                <span class="precio">$12.900</span>
+                                <a href="#" class="btn btn-pequeno">Agregar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto" id="p2">
+                        <div class="producto-imagen">
+                            <img src="../img/products/malla.jpg" alt="Bolsa de malla de algodón con naranjas">
+                            <span class="etiqueta">En stock</span>
+                            <a href="#p2" class="favorito" aria-label="Agregar a favoritos">♥</a>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Hogar</span>
+                            <h3>Bolsa de malla</h3>
+                            <div class="producto-pie">
+                                <span class="precio">$18.500</span>
+                                <a href="#" class="btn btn-pequeno">Agregar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto" id="p3">
+                        <div class="producto-imagen">
+                            <img src="../img/products/botella.jpg" alt="Botella de vidrio con tapa hermética">
+                            <span class="etiqueta">En stock</span>
+                            <a href="#p3" class="favorito" aria-label="Agregar a favoritos">♥</a>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Hogar</span>
+                            <h3>Botella de vidrio</h3>
+                            <div class="producto-pie">
+                                <span class="precio">$34.900</span>
+                                <a href="#" class="btn btn-pequeno">Agregar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto" id="p4">
+                        <div class="producto-imagen">
+                            <img src="../img/products/envoltura.jpg" alt="Envoltura de cera de abeja sobre una tabla de madera">
+                            <span class="etiqueta">En stock</span>
+                            <a href="#p4" class="favorito" aria-label="Agregar a favoritos">♥</a>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Alimentos</span>
+                            <h3>Envoltura de cera de abeja</h3>
+                            <div class="producto-pie">
+                                <span class="precio">$22.000</span>
+                                <a href="#" class="btn btn-pequeno">Agregar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto agotado" id="p5">
+                        <div class="producto-imagen">
+                            <img src="../img/products/shampoo.jpg" alt="Barra de champú sólido en una jabonera">
+                            <span class="etiqueta agotado">Agotado</span>
+                            <a href="#p5" class="favorito" aria-label="Agregar a favoritos">♥</a>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Cuidado personal</span>
+                            <h3>Champú sólido</h3>
+                            <div class="producto-pie">
+                                <span class="precio">$27.500</span>
+                                <a href="#" class="btn btn-pequeno">Agregar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto" id="p6">
+                        <div class="producto-imagen">
+                            <img src="../img/products/bolsa.jpg" alt="Bolsa de silicona reutilizable con verduras">
+                            <span class="etiqueta">En stock</span>
+                            <a href="#p6" class="favorito" aria-label="Agregar a favoritos">♥</a>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Alimentos</span>
+                            <h3>Bolsas de silicona</h3>
+                            <div class="producto-pie">
+                                <span class="precio">$39.900</span>
+                                <a href="#" class="btn btn-pequeno">Agregar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto" id="p7">
+                        <div class="producto-imagen">
+                            <img src="../img/products/camiseta.jpg" alt="Camiseta blanca de algodón orgánico en un gancho">
+                            <span class="etiqueta">En stock</span>
+                            <a href="#p7" class="favorito" aria-label="Agregar a favoritos">♥</a>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Moda</span>
+                            <h3>Camiseta de algodón orgánico</h3>
+                            <div class="producto-pie">
+                                <span class="precio">$49.900</span>
+                                <a href="#" class="btn btn-pequeno">Agregar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto" id="p8">
+                        <div class="producto-imagen">
+                            <img src="../img/products/vela.jpg" alt="Vela de soya en frasco de vidrio ámbar">
+                            <span class="etiqueta">En stock</span>
+                            <a href="#p8" class="favorito" aria-label="Agregar a favoritos">♥</a>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Hogar</span>
+                            <h3>Vela de soya</h3>
+                            <div class="producto-pie">
+                                <span class="precio">$32.000</span>
+                                <a href="#" class="btn btn-pequeno">Agregar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto" id="p9">
+                        <div class="producto-imagen">
+                            <img src="../img/products/balsamo.jpg" alt="Bálsamo labial natural junto a un frasco de manteca">
+                            <span class="etiqueta">En stock</span>
+                            <a href="#p9" class="favorito" aria-label="Agregar a favoritos">♥</a>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Cuidado personal</span>
+                            <h3>Bálsamo labial natural</h3>
+                            <div class="producto-pie">
+                                <span class="precio">$22.900</span>
+                                <a href="#" class="btn btn-pequeno">Agregar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto" id="p10">
+                        <div class="producto-imagen">
+                            <img src="../img/products/lonchera.jpg" alt="Lonchera de acero inoxidable con un sándwich">
+                            <span class="etiqueta">En stock</span>
+                            <a href="#p10" class="favorito" aria-label="Agregar a favoritos">♥</a>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Alimentos</span>
+                            <h3>Lonchera de acero</h3>
+                            <div class="producto-pie">
+                                <span class="precio">$68.000</span>
+                                <a href="#" class="btn btn-pequeno">Agregar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto" id="p11">
+                        <div class="producto-imagen">
+                            <img src="../img/products/tote.jpg" alt="Bolsa de tela de algodón">
+                            <span class="etiqueta">En stock</span>
+                            <a href="#p11" class="favorito" aria-label="Agregar a favoritos">♥</a>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Moda</span>
+                            <h3>Bolsa de tela</h3>
+                            <div class="producto-pie">
+                                <span class="precio">$24.900</span>
+                                <a href="#" class="btn btn-pequeno">Agregar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto" id="p12">
+                        <div class="producto-imagen">
+                            <img src="../img/products/pitillo.jpg" alt="Pitillos de acero inoxidable con cepillo limpiador">
+                            <span class="etiqueta">En stock</span>
+                            <a href="#p12" class="favorito" aria-label="Agregar a favoritos">♥</a>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Hogar</span>
+                            <h3>Pitillos de acero</h3>
+                            <div class="producto-pie">
+                                <span class="precio">$16.500</span>
+                                <a href="#" class="btn btn-pequeno">Agregar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto" id="p13">
+                        <div class="producto-imagen">
+                            <img src="../img/products/desmaquillante.jpg" alt="Discos desmaquillantes reutilizables en un frasco de bambú">
+                            <span class="etiqueta">En stock</span>
+                            <a href="#p13" class="favorito" aria-label="Agregar a favoritos">♥</a>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Cuidado personal</span>
+                            <h3>Discos desmaquillantes</h3>
+                            <div class="producto-pie">
+                                <span class="precio">$21.900</span>
+                                <a href="#" class="btn btn-pequeno">Agregar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto agotado" id="p14">
+                        <div class="producto-imagen">
+                            <img src="../img/products/billetera.jpg" alt="Billetera de corcho">
+                            <span class="etiqueta agotado">Agotado</span>
+                            <a href="#p14" class="favorito" aria-label="Agregar a favoritos">♥</a>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Moda</span>
+                            <h3>Billetera de corcho</h3>
+                            <div class="producto-pie">
+                                <span class="precio">$58.000</span>
+                                <a href="#" class="btn btn-pequeno">Agregar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto" id="p15">
+                        <div class="producto-imagen">
+                            <img src="../img/products/cubiertos.jpg" alt="Utensilios de cocina de bambú">
+                            <span class="etiqueta">En stock</span>
+                            <a href="#p15" class="favorito" aria-label="Agregar a favoritos">♥</a>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Alimentos</span>
+                            <h3>Utensilios de bambú</h3>
+                            <div class="producto-pie">
+                                <span class="precio">$36.900</span>
+                                <a href="#" class="btn btn-pequeno">Agregar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto" id="p16">
+                        <div class="producto-imagen">
+                            <img src="../img/products/esponja.jpg" alt="Esponja vegetal de luffa">
+                            <span class="etiqueta">En stock</span>
+                            <a href="#p16" class="favorito" aria-label="Agregar a favoritos">♥</a>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Hogar</span>
+                            <h3>Esponja vegetal</h3>
+                            <div class="producto-pie">
+                                <span class="precio">$9.900</span>
+                                <a href="#" class="btn btn-pequeno">Agregar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto" id="p17">
+                        <div class="producto-imagen">
+                            <img src="../img/products/gafas.jpg" alt="Gafas de sol de bambú sobre su estuche">
+                            <span class="etiqueta">En stock</span>
+                            <a href="#p17" class="favorito" aria-label="Agregar a favoritos">♥</a>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Moda</span>
+                            <h3>Gafas de bambú</h3>
+                            <div class="producto-pie">
+                                <span class="precio">$99.900</span>
+                                <a href="#" class="btn btn-pequeno">Agregar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto" id="p18">
+                        <div class="producto-imagen">
+                            <img src="../img/products/peine.jpg" alt="Peine de madera">
+                            <span class="etiqueta">En stock</span>
+                            <a href="#p18" class="favorito" aria-label="Agregar a favoritos">♥</a>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Cuidado personal</span>
+                            <h3>Peine de madera</h3>
+                            <div class="producto-pie">
+                                <span class="precio">$19.900</span>
+                                <a href="#" class="btn btn-pequeno">Agregar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto" id="p19">
+                        <div class="producto-imagen">
+                            <img src="../img/products/cepillo-platos.jpg" alt="Cepillos para platos de madera y fibra de coco">
+                            <span class="etiqueta">En stock</span>
+                            <a href="#p19" class="favorito" aria-label="Agregar a favoritos">♥</a>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Hogar</span>
+                            <h3>Cepillo para platos</h3>
+                            <div class="producto-pie">
+                                <span class="precio">$14.900</span>
+                                <a href="#" class="btn btn-pequeno">Agregar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto" id="p20">
+                        <div class="producto-imagen">
+                            <img src="../img/products/medias.jpg" alt="Par de medias grises de fibra de bambú">
+                            <span class="etiqueta">En stock</span>
+                            <a href="#p20" class="favorito" aria-label="Agregar a favoritos">♥</a>
+                        </div>
+                        <div class="producto-info">
+                            <span class="producto-categoria">Moda</span>
+                            <h3>Medias de bambú</h3>
+                            <div class="producto-pie">
+                                <span class="precio">$17.900</span>
+                                <a href="#" class="btn btn-pequeno">Agregar</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <nav class="paginacion" aria-label="Paginación">
+                    <a href="#">← Anterior</a>
+                    <a href="#" class="activa">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">Siguiente →</a>
+                </nav>
+            </div>
+        </div>
+    </main>
+
+    <footer class="pie">
+        <div class="pie-grid">
+            <div class="pie-marca">
+                <a href="../index.html" class="logo">
+                    <img src="../img/icons/hoja.svg" alt="">
+                    EcoMarket
+                </a>
+                <p>Compras éticas para consumidores conscientes.</p>
+                <div class="redes">
+                    <a href="https://instagram.com" target="_blank">Ig</a>
+                    <a href="https://facebook.com" target="_blank">Fb</a>
+                    <a href="https://tiktok.com" target="_blank">Tk</a>
+                </div>
+            </div>
+
+            <div>
+                <h3>Tienda</h3>
+                <ul>
+                    <li><a href="productos.html">Todos los productos</a></li>
+                    <li><a href="sobre-nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Contacto</h3>
+                <ul>
+                    <li>hola@ecomarket.com</li>
+                    <li>+57 300 123 4567</li>
+                    <li>Bucaramanga, Colombia</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="pie-copy">© 2026 EcoMarket. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

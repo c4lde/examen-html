@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMarket | Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+    <header class="cabecera">
+        <a href="../index.html" class="logo">
+            <img src="../img/icons/hoja.svg" alt="">
+            EcoMarket
+        </a>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="sobre-nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html" class="activo">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="accesos">
+            <a href="productos.html"><img src="../img/icons/buscar.svg" alt="Buscar"></a>
+            <a href="#"><img src="../img/icons/carrito.svg" alt="Carrito"></a>
+        </div>
+    </header>
+
+    <main class="contacto">
+        <div class="contacto-encabezado">
+            <h1>Estamos para ayudarte</h1>
+            <p>¿Tienes una pregunta sobre un producto o sobre tu pedido? Escríbenos y te respondemos en menos de 24 horas.</p>
+        </div>
+
+        <div class="contacto-grid">
+            <form class="formulario" action="#">
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. María Fernanda López" required minlength="3">
+                    <span class="campo-error">Escribe tu nombre, mínimo 3 letras.</span>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="nombre@correo.com" required>
+                    <span class="campo-error">Escribe un correo válido, por ejemplo nombre@correo.com.</span>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="¿En qué te podemos ayudar?" required minlength="10"></textarea>
+                    <span class="campo-error">Cuéntanos un poco más, mínimo 10 caracteres.</span>
+                </div>
+
+                <button type="submit" class="btn">Enviar mensaje</button>
+            </form>
+
+            <div class="contacto-info">
+                <h2 class="contacto-sede">
+                    <img src="../img/icons/local.svg" alt="">
+                    Nuestra sede
+                </h2>
+
+                <div class="mapa">
+                    <img src="../img/hero/mapa.svg" alt="Mapa con la ubicación de EcoMarket en Bucaramanga">
+                    <div class="mapa-direccion">
+                        <strong>Calle 36 # 27-50, Bucaramanga</strong>
+                        <span>Lunes a viernes, 8:00 a.m. a 6:00 p.m.</span>
+                    </div>
+                </div>
+
+                <div class="contacto-datos">
+                    <div class="dato">
+                        <img src="../img/icons/correo.svg" alt="">
+                        <h3>Escríbenos</h3>
+                        <p>hola@ecomarket.com</p>
+                    </div>
+
+                    <div class="dato">
+                        <img src="../img/icons/telefono.svg" alt="">
+                        <h3>Llámanos</h3>
+                        <p>+57 300 123 4567</p>
+                    </div>
+                </div>
+
+                <p class="contacto-redes-texto">Síguenos en redes</p>
+                <div class="redes-sociales">
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><img src="../img/icons/instagram.svg" alt=""></a>
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><img src="../img/icons/facebook.svg" alt=""></a>
+                    <a href="https://tiktok.com" target="_blank" aria-label="TikTok"><img src="../img/icons/tiktok.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="pie">
+        <div class="pie-grid">
+            <div class="pie-marca">
+                <a href="../index.html" class="logo">
+                    <img src="../img/icons/hoja.svg" alt="">
+                    EcoMarket
+                </a>
+                <p>Compras éticas para consumidores conscientes.</p>
+                <div class="redes">
+                    <a href="https://instagram.com" target="_blank">Ig</a>
+                    <a href="https://facebook.com" target="_blank">Fb</a>
+                    <a href="https://tiktok.com" target="_blank">Tk</a>
+                </div>
+            </div>
+
+            <div>
+                <h3>Tienda</h3>
+                <ul>
+                    <li><a href="productos.html">Todos los productos</a></li>
+                    <li><a href="sobre-nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Contacto</h3>
+                <ul>
+                    <li>hola@ecomarket.com</li>
+                    <li>+57 300 123 4567</li>
+                    <li>Bucaramanga, Colombia</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="pie-copy">© 2026 EcoMarket. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
