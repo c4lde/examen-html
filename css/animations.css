@@ -104,32 +104,27 @@
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
 }
 
-/* Campos del formulario de contacto: transición de borde y fondo */
 .campo input,
 .campo textarea {
     transition: border-color var(--transicion), background-color var(--transicion);
 }
 
-/* Iconos de redes sociales en contacto: transición de tamaño y borde */
 .redes-sociales a {
     transition: transform var(--transicion), border-color var(--transicion);
 }
 
-/* Hover de redes sociales: agranda el icono y pone el borde verde */
 .redes-sociales a:hover {
     transform: scale(1.15);
     border-color: var(--color-primario);
 }
 
-/* Movimiento reducido (cualquier pantalla, si el usuario lo pide en su sistema): quita la animación del carrusel */
 @media (prefers-reduced-motion: reduce) {
-    /* Carrusel: permite moverlo a mano con scroll horizontal */
     .carrusel {
         overflow-x: auto;
     }
 
-    /* Pista del carrusel: sin animación automática */
     .carrusel-pista {
         animation: none;
     }
 }
+

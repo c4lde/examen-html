@@ -1,4 +1,3 @@
-/* Reset: quita márgenes y rellenos y usa box-sizing border-box en todo */
 *,
 *::before,
 *::after {
@@ -7,15 +6,12 @@
     box-sizing: border-box;
 }
 
-/* Imágenes: nunca más anchas que su contenedor y sin espacio extra debajo */
 img {
     max-width: 100%;
     display: block;
 }
 
-/* Variables globales del sitio: colores, fuentes, espacios y estilos comunes */
 :root {
-    /* Colores: verde principal, beige, blanco, fondo, textos, borde, error y estrellas */
     --color-primario: #2ecc71;
     --color-primario-oscuro: #27ae60;
     --color-beige: #f5f5dc;
@@ -27,24 +23,20 @@ img {
     --color-error: #e74c3c;
     --color-estrella: #f4b400;
 
-    /* Fuentes: Playfair Display para títulos e Inter para el texto */
     --fuente-titulos: 'Playfair Display', serif;
     --fuente-texto: 'Inter', sans-serif;
 
-    /* Espacios: tamaños de margen y relleno de pequeño a muy grande */
     --espacio-sm: 0.5rem;
     --espacio-md: 1rem;
     --espacio-lg: 2rem;
     --espacio-xl: 4rem;
 
-    /* Bordes, sombra y transición: esquinas redondeadas, sombra suave y velocidad de los efectos */
     --radio: 16px;
     --radio-pildora: 999px;
     --sombra: 0 4px 12px rgba(0, 0, 0, 0.08);
     --transicion: 0.3s ease;
 }
 
-/* Cuerpo de la página: fuente del texto, color, fondo gris claro e interlineado */
 body {
     font-family: var(--fuente-texto);
     color: var(--color-texto);
@@ -52,7 +44,6 @@ body {
     line-height: 1.6;
 }
 
-/* Títulos h1, h2 y h3: fuente Playfair Display e interlineado más compacto */
 h1,
 h2,
 h3 {
@@ -60,49 +51,72 @@ h3 {
     line-height: 1.2;
 }
 
-/* Tamaño del h1 en celular */
 h1 {
     font-size: 2rem;
 }
 
-/* Tamaño del h2 en celular */
 h2 {
     font-size: 1.5rem;
 }
 
-/* Tamaño del h3 en todas las pantallas */
 h3 {
     font-size: 1.25rem;
 }
 
-/* Enlaces: sin subrayado y con el mismo color del texto que los rodea */
 a {
     text-decoration: none;
     color: inherit;
 }
 
-/* Tablet (600px o más): agranda los títulos h1 y h2 */
 @media (min-width: 600px) {
-    /* h1 más grande en tablet */
     h1 {
         font-size: 2.5rem;
     }
 
-    /* h2 más grande en tablet */
     h2 {
         font-size: 1.75rem;
     }
 }
 
-/* Escritorio (1024px o más): títulos h1 y h2 aún más grandes */
 @media (min-width: 1024px) {
-    /* h1 más grande en escritorio */
     h1 {
         font-size: 3rem;
     }
 
-    /* h2 más grande en escritorio */
     h2 {
         font-size: 2rem;
     }
 }
+
+    .oferta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--espacio-md);
+        padding: var(--espacio-lg);
+        text-align: center;
+        background-color: #27ae60;
+        background: linear-gradient(135deg, #1f2933, var(--color-primario));
+        border-radius: var(--radio);
+        animation: pulso 2s ease-in-out infinite;
+        justify-content: center;
+        box-shadow: #f4b400;
+    }
+    
+    @keyframes pulso {
+        0%,
+        100% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.02);
+        }
+    }
+
+    .extra {
+        text-align: center;
+        animation: pulso 2s ease-in-out infinite;
+        background-color: #27ae60;
+        
+    }
