@@ -1,3 +1,4 @@
+/* Cabecera fija arriba: grid con logo y accesos arriba y el menú debajo */
 .cabecera {
     display: grid;
     grid-template-areas:
@@ -13,6 +14,7 @@
     z-index: 10;
 }
 
+/* Logo: icono y nombre en fila con la fuente de títulos */
 .logo {
     grid-area: logo;
     display: flex;
@@ -22,30 +24,36 @@
     font-size: 1.5rem;
 }
 
+/* Icono del logo: ancho de 28px */
 .logo img {
     width: 28px;
 }
 
+/* Menú de navegación: ocupa la zona menu de la cabecera */
 .menu {
     grid-area: menu;
 }
 
+/* Lista del menú: enlaces en fila, repartidos y sin viñetas */
 .menu ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
 }
 
+/* Enlaces del menú: en negrita y color gris */
 .menu a {
     font-weight: 600;
     color: var(--color-texto-suave);
 }
 
+/* Enlace del menú en hover o de la página actual: color verde oscuro */
 .menu a:hover,
 .menu a.activo {
     color: var(--color-primario-oscuro);
 }
 
+/* Accesos (buscar y carrito): iconos en fila alineados a la derecha */
 .accesos {
     grid-area: accesos;
     display: flex;
@@ -53,10 +61,12 @@
     gap: var(--espacio-md);
 }
 
+/* Iconos de accesos: ancho de 24px */
 .accesos img {
     width: 24px;
 }
 
+/* Hero del inicio: portada alta con imagen de fondo oscurecida y texto blanco abajo */
 .hero {
     min-height: 70vh;
     display: flex;
@@ -70,10 +80,12 @@
     color: var(--color-blanco);
 }
 
+/* Contenido del hero: limita el ancho del texto */
 .hero-contenido {
     max-width: 36rem;
 }
 
+/* Insignia del hero: etiqueta pequeña con borde blanco y forma de píldora */
 .hero-insignia {
     display: inline-block;
     padding: 0.3em 0.9em;
@@ -83,14 +95,17 @@
     font-size: 0.875rem;
 }
 
+/* Párrafo del hero: separación arriba y abajo */
 .hero p {
     margin: var(--espacio-md) 0 var(--espacio-lg);
 }
 
+/* Sección de productos destacados: relleno alrededor */
 .destacados {
     padding: var(--espacio-xl) var(--espacio-md);
 }
 
+/* Encabezado de destacados: título a la izquierda y enlace a la derecha */
 .destacados-encabezado {
     display: flex;
     justify-content: space-between;
@@ -98,52 +113,62 @@
     margin-bottom: var(--espacio-lg);
 }
 
+/* Enlace del encabezado de destacados: verde oscuro y en negrita */
 .destacados-encabezado a {
     color: var(--color-primario-oscuro);
     font-weight: 600;
 }
 
+/* Grid de destacados: una columna en celular */
 .destacados-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--espacio-lg);
 }
 
+/* Pie de página: relleno y fondo beige */
 .pie {
     padding: var(--espacio-xl) var(--espacio-md) var(--espacio-lg);
     background-color: var(--color-beige);
 }
 
+/* Grid del pie: una columna en celular */
 .pie-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--espacio-lg);
 }
 
+/* Títulos del pie: letra pequeña y margen abajo */
 .pie h3 {
     margin-bottom: var(--espacio-sm);
     font-size: 1rem;
 }
 
+/* Listas del pie: sin viñetas y texto gris */
 .pie ul {
     list-style: none;
     color: var(--color-texto-suave);
 }
 
+/* Hover de los enlaces del pie: color verde oscuro */
 .pie ul a:hover {
     color: var(--color-primario-oscuro);
 }
 
+/* Párrafo de la marca en el pie: texto gris con márgenes */
 .pie-marca p {
     margin: var(--espacio-sm) 0 var(--espacio-md);
     color: var(--color-texto-suave);
 }
 
+/* Redes del pie: enlaces en fila con espacio entre ellos */
 .redes {
     display: flex;
     gap: var(--espacio-sm);
 }
 
+/* Botones de redes del pie: círculos blancos de 40px con el texto centrado */
 .redes a {
     display: grid;
     place-content: center;
@@ -155,6 +180,7 @@
     font-size: 0.875rem;
 }
 
+/* Derechos reservados: línea arriba, letra pequeña y gris */
 .pie-copy {
     margin-top: var(--espacio-lg);
     padding-top: var(--espacio-md);
@@ -163,10 +189,12 @@
     color: var(--color-texto-suave);
 }
 
+/* Sección del catálogo de productos: relleno alrededor */
 .catalogo {
     padding: var(--espacio-lg) var(--espacio-md) var(--espacio-xl);
 }
 
+/* Encabezado del catálogo: título y buscador en columna */
 .catalogo-encabezado {
     display: flex;
     flex-direction: column;
@@ -174,28 +202,33 @@
     margin-bottom: var(--espacio-lg);
 }
 
+/* Texto del encabezado del catálogo: color gris */
 .catalogo-encabezado p {
     color: var(--color-texto-suave);
 }
 
+/* Contenido del catálogo: filtros y productos en una columna */
 .catalogo-contenido {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--espacio-lg);
 }
 
+/* Filtros: grid de una columna en celular */
 .filtros {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--espacio-md);
 }
 
+/* Grid de productos: una columna en celular */
 .productos-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--espacio-lg);
 }
 
+/* Banner de Nosotros: degradado verde con texto blanco centrado */
 .banner {
     padding: var(--espacio-xl) var(--espacio-md);
     background: linear-gradient(135deg, var(--color-primario-oscuro), var(--color-primario));
@@ -203,11 +236,13 @@
     text-align: center;
 }
 
+/* Párrafo del banner: ancho limitado y centrado */
 .banner p {
     max-width: 32rem;
     margin: var(--espacio-md) auto 0;
 }
 
+/* Sección historia: imagen y texto en columna */
 .historia {
     display: flex;
     flex-direction: column;
@@ -215,6 +250,7 @@
     padding: var(--espacio-xl) var(--espacio-md);
 }
 
+/* Imagen de historia: proporción 4:3, recortada, esquinas redondeadas y sombra */
 .historia img {
     aspect-ratio: 4 / 3;
     object-fit: cover;
@@ -222,22 +258,26 @@
     box-shadow: var(--sombra);
 }
 
+/* Texto de historia: elementos en columna con espacio entre ellos */
 .historia-texto {
     display: flex;
     flex-direction: column;
     gap: var(--espacio-md);
 }
 
+/* Párrafos de historia: color gris */
 .historia-texto p {
     color: var(--color-texto-suave);
 }
 
+/* Sección principios: fondo blanco y texto centrado */
 .principios {
     padding: var(--espacio-xl) var(--espacio-md);
     background-color: var(--color-blanco);
     text-align: center;
 }
 
+/* Grid de principios: una columna en celular */
 .principios-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -245,151 +285,184 @@
     margin-top: var(--espacio-lg);
 }
 
+/* Sección testimonios: relleno arriba y abajo y texto centrado */
 .testimonios {
     padding: var(--espacio-xl) 0;
     text-align: center;
 }
 
+/* Título de testimonios: relleno a los lados */
 .testimonios h2 {
     padding: 0 var(--espacio-md);
 }
 
+/* Carrusel: oculta lo que se sale por los lados */
 .carrusel {
     margin-top: var(--espacio-lg);
     padding: var(--espacio-md) 0;
     overflow: hidden;
 }
 
+/* Pista del carrusel: testimonios en fila con el ancho de todo su contenido */
 .carrusel-pista {
     display: flex;
     width: max-content;
 }
 
+/* Sección de contacto: relleno alrededor */
 .contacto {
     padding: var(--espacio-xl) var(--espacio-md);
 }
 
+/* Encabezado de contacto: ancho limitado, centrado y margen abajo */
 .contacto-encabezado {
     max-width: 40rem;
     margin: 0 auto var(--espacio-xl);
     text-align: center;
 }
 
+/* Párrafo del encabezado de contacto: separación arriba y color gris */
 .contacto-encabezado p {
     margin-top: var(--espacio-md);
     color: var(--color-texto-suave);
 }
 
+/* Grid de contacto: formulario e información en una columna */
 .contacto-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--espacio-xl);
 }
 
+/* Información de contacto: bloques en columna con espacio entre ellos */
 .contacto-info {
     display: flex;
     flex-direction: column;
     gap: var(--espacio-lg);
 }
 
+/* Datos de contacto: grid de una columna en celular */
 .contacto-datos {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--espacio-md);
 }
 
+/* Tablet (600px o más): grids a 2 o 3 columnas y encabezado del catálogo en fila */
 @media (min-width: 600px) {
+    /* Destacados en 2 columnas */
     .destacados-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* Pie en 2 columnas */
     .pie-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* Encabezado del catálogo en fila: título a la izquierda y buscador a la derecha */
     .catalogo-encabezado {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-end;
     }
 
+    /* Buscador del catálogo: ancho fijo de 320px */
     .catalogo-encabezado .buscador {
         width: 320px;
     }
 
+    /* Filtros en 3 columnas */
     .filtros {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    /* Productos en 2 columnas */
     .productos-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* Principios en 2 columnas */
     .principios-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* Datos de contacto en 2 columnas */
     .contacto-datos {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
+/* Escritorio (1024px o más): cabecera en una fila, más columnas y más relleno */
 @media (min-width: 1024px) {
+    /* Cabecera en una fila: logo, menú al centro y accesos a la derecha */
     .cabecera {
         grid-template-areas: "logo menu accesos";
         grid-template-columns: 1fr auto 1fr;
         padding: var(--espacio-md) var(--espacio-xl);
     }
 
+    /* Destacados con más relleno */
     .destacados {
         padding: var(--espacio-xl);
     }
 
+    /* Destacados en 3 columnas */
     .destacados-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    /* Menú con más espacio entre enlaces */
     .menu ul {
         gap: var(--espacio-lg);
     }
 
+    /* Hero más alto, con el texto centrado verticalmente y más relleno */
     .hero {
         min-height: 80vh;
         align-items: center;
         padding: var(--espacio-xl);
     }
 
+    /* Pie con más relleno a los lados */
     .pie {
         padding: var(--espacio-xl) var(--espacio-xl) var(--espacio-lg);
     }
 
+    /* Pie en 4 columnas: la de la marca más ancha */
     .pie-grid {
         grid-template-columns: 2fr 1fr 1fr 1fr;
     }
 
+    /* Catálogo con más relleno */
     .catalogo {
         padding: var(--espacio-xl);
     }
 
+    /* Catálogo en 2 columnas: filtros de 240px y productos al lado */
     .catalogo-contenido {
         grid-template-columns: 240px 1fr;
         align-items: start;
     }
 
+    /* Filtros en una columna y fijos al hacer scroll */
     .filtros {
         grid-template-columns: 1fr;
         position: sticky;
         top: 6rem;
     }
 
+    /* Productos en 3 columnas */
     .productos-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    /* Banner más alto */
     .banner {
         padding: 6rem var(--espacio-xl);
     }
 
+    /* Historia en fila: imagen y texto lado a lado y centrados */
     .historia {
         flex-direction: row;
         align-items: center;
@@ -397,23 +470,28 @@
         padding: var(--espacio-xl);
     }
 
+    /* Imagen y texto de historia: mitad del ancho cada uno */
     .historia img,
     .historia-texto {
         width: 50%;
     }
 
+    /* Principios con más relleno */
     .principios {
         padding: var(--espacio-xl);
     }
 
+    /* Principios en 4 columnas */
     .principios-grid {
         grid-template-columns: repeat(4, 1fr);
     }
 
+    /* Contacto con más relleno */
     .contacto {
         padding: var(--espacio-xl);
     }
 
+    /* Grid de contacto en 2 columnas, centrado y con ancho máximo */
     .contacto-grid {
         grid-template-columns: 1fr 1fr;
         align-items: start;
@@ -422,7 +500,9 @@
     }
 }
 
+/* Pantalla grande (1280px o más): productos en 4 columnas */
 @media (min-width: 1280px) {
+    /* Productos en 4 columnas */
     .productos-grid {
         grid-template-columns: repeat(4, 1fr);
     }

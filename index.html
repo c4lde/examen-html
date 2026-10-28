@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
+<!-- Cabecera del documento: metadatos, título y hojas de estilo -->
 <head>
+    <!-- Codificación de caracteres UTF-8 para mostrar tildes y ñ -->
     <meta charset="UTF-8">
+    <!-- Ajusta el ancho de la página al dispositivo (diseño responsive) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título que aparece en la pestaña del navegador -->
     <title>EcoMarket | Inicio</title>
+    <!-- Conexión previa a los servidores de Google Fonts para que cargue más rápido -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Carga la fuente Inter y Playfair Display desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <!-- Hojas de estilo del sitio: base, estructura, componentes y animaciones -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/animations.css">
 </head>
+<!-- Cuerpo de la página: todo el contenido visible -->
 <body>
+    <!-- Cabecera fija: logo, menú de navegación e iconos de buscar/carrito (class cabecera) -->
     <header class="cabecera">
+        <!-- Logo (class logo): icono de hoja y nombre, enlaza al inicio -->
         <a href="index.html" class="logo">
             <img src="img/icons/hoja.svg" alt="">
             EcoMarket
         </a>
 
+        <!-- Menú de navegación principal (class menu) -->
         <nav class="menu">
+            <!-- Enlaces a las páginas del sitio; la class activo marca la página actual -->
             <ul>
                 <li><a href="index.html" class="activo">Inicio</a></li>
                 <li><a href="views/productos.html">Productos</a></li>
@@ -28,38 +40,60 @@
             </ul>
         </nav>
 
+        <!-- Accesos rápidos (class accesos): iconos de buscar y carrito -->
         <div class="accesos">
+            <!-- Icono de buscar: lleva a la página de productos -->
             <a href="views/productos.html"><img src="img/icons/buscar.svg" alt="Buscar"></a>
+            <!-- Icono del carrito de compras (todavía sin enlace) -->
             <a href="#"><img src="img/icons/carrito.svg" alt="Carrito"></a>
         </div>
     </header>
 
+    <!-- Contenido principal de la página -->
     <main>
+        <!-- Sección hero: portada con el mensaje principal y un botón (class hero) -->
         <section class="hero">
+            <!-- Contenedor del texto del hero (class hero-contenido) -->
             <div class="hero-contenido">
+                <!-- Etiqueta pequeña destacada (class hero-insignia) -->
                 <span class="hero-insignia">Nueva colección</span>
+                <!-- Título principal; la parte dentro de em sale resaltada -->
                 <h1>Compra responsable, <em>vive sostenible</em></h1>
+                <!-- Subtítulo que describe la tienda -->
                 <p>Productos ecológicos, reutilizables y sustentables para tu día a día.</p>
+                <!-- Botón que lleva a la página de productos (class btn) -->
                 <a href="views/productos.html" class="btn">Explorar productos</a>
             </div>
         </section>
 
+        <!-- Sección de productos destacados (class destacados) -->
         <section class="destacados">
+            <!-- Encabezado de la sección: título y enlace Ver todos (class destacados-encabezado) -->
             <div class="destacados-encabezado">
+                <!-- Título de la sección -->
                 <h2>Productos destacados</h2>
+                <!-- Enlace para ver todos los productos -->
                 <a href="views/productos.html">Ver todos</a>
             </div>
 
+            <!-- Cuadrícula de tarjetas de productos (class destacados-grid) -->
             <div class="destacados-grid">
+                <!-- Tarjeta de producto: Cepillo de bambú (todas las tarjetas siguen esta estructura) -->
                 <article class="tarjeta">
+                    <!-- Imagen del producto -->
                     <img src="img/products/cepillo.jpg" alt="Cepillo de dientes de bambú">
+                    <!-- Cuerpo de la tarjeta: nombre, descripción y botón (class tarjeta-cuerpo) -->
                     <div class="tarjeta-cuerpo">
+                        <!-- Nombre del producto -->
                         <h3>Cepillo de bambú</h3>
+                        <!-- Descripción corta del producto -->
                         <p>Mango 100% compostable y cerdas suaves. Adiós al plástico en tu baño.</p>
+                        <!-- Botón Ver más, lleva a la página de productos -->
                         <a href="views/productos.html" class="btn">Ver más</a>
                     </div>
                 </article>
 
+                <!-- Tarjeta de producto: Bolsa de malla -->
                 <article class="tarjeta">
                     <img src="img/products/malla.jpg" alt="Bolsa de malla de algodón con naranjas">
                     <div class="tarjeta-cuerpo">
@@ -69,6 +103,7 @@
                     </div>
                 </article>
 
+                <!-- Tarjeta de producto: Botella de vidrio -->
                 <article class="tarjeta">
                     <img src="img/products/botella.jpg" alt="Botella de vidrio con tapa hermética">
                     <div class="tarjeta-cuerpo">
@@ -78,6 +113,7 @@
                     </div>
                 </article>
 
+                <!-- Tarjeta de producto: Envoltura de cera de abeja -->
                 <article class="tarjeta">
                     <img src="img/products/envoltura.jpg" alt="Envoltura de cera de abeja sobre una tabla de madera">
                     <div class="tarjeta-cuerpo">
@@ -87,6 +123,7 @@
                     </div>
                 </article>
 
+                <!-- Tarjeta de producto: Champú sólido -->
                 <article class="tarjeta">
                     <img src="img/products/shampoo.jpg" alt="Barra de champú sólido en una jabonera">
                     <div class="tarjeta-cuerpo">
@@ -96,6 +133,7 @@
                     </div>
                 </article>
 
+                <!-- Tarjeta de producto: Bolsas de silicona reutilizables -->
                 <article class="tarjeta">
                     <img src="img/products/bolsa.jpg" alt="Bolsa de silicona reutilizable con verduras">
                     <div class="tarjeta-cuerpo">
@@ -108,14 +146,20 @@
         </section>
     </main>
 
+    <!-- Pie de página (class pie): marca, enlaces, contacto y legal -->
     <footer class="pie">
+        <!-- Cuadrícula con las columnas del pie (class pie-grid) -->
         <div class="pie-grid">
+            <!-- Columna de marca (class pie-marca): logo, lema y redes sociales -->
             <div class="pie-marca">
+                <!-- Logo del pie, enlaza al inicio -->
                 <a href="index.html" class="logo">
                     <img src="img/icons/hoja.svg" alt="">
                     EcoMarket
                 </a>
+                <!-- Lema de la tienda -->
                 <p>Compras éticas para consumidores conscientes.</p>
+                <!-- Enlaces a redes sociales (class redes) -->
                 <div class="redes">
                     <a href="https://instagram.com" target="_blank">Ig</a>
                     <a href="https://facebook.com" target="_blank">Fb</a>
@@ -123,8 +167,11 @@
                 </div>
             </div>
 
+            <!-- Columna Tienda: enlaces a las páginas del sitio -->
             <div>
+                <!-- Título de la columna Tienda -->
                 <h3>Tienda</h3>
+                <!-- Lista de enlaces de la tienda -->
                 <ul>
                     <li><a href="views/productos.html">Todos los productos</a></li>
                     <li><a href="views/sobre-nosotros.html">Nosotros</a></li>
@@ -132,8 +179,11 @@
                 </ul>
             </div>
 
+            <!-- Columna Contacto: correo, teléfono y ciudad -->
             <div>
+                <!-- Título de la columna Contacto -->
                 <h3>Contacto</h3>
+                <!-- Lista con los datos de contacto -->
                 <ul>
                     <li>hola@ecomarket.com</li>
                     <li>+57 300 123 4567</li>
@@ -141,8 +191,11 @@
                 </ul>
             </div>
 
+            <!-- Columna Legal: términos y privacidad -->
             <div>
+                <!-- Título de la columna Legal -->
                 <h3>Legal</h3>
+                <!-- Lista de enlaces legales (todavía sin página) -->
                 <ul>
                     <li><a href="#">Términos y condiciones</a></li>
                     <li><a href="#">Política de privacidad</a></li>
@@ -150,6 +203,7 @@
             </div>
         </div>
 
+        <!-- Texto de derechos de autor (class pie-copy) -->
         <p class="pie-copy">© 2026 EcoMarket. Todos los derechos reservados.</p>
     </footer>
 </body>

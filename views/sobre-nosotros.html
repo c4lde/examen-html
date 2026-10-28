@@ -1,25 +1,38 @@
 <!DOCTYPE html>
+<!-- Documento HTML en español -->
 <html lang="es">
+<!-- Cabecera del documento: configuración, título, fuentes y estilos -->
 <head>
+    <!-- Codificación de caracteres UTF-8 (permite tildes y ñ) -->
     <meta charset="UTF-8">
+    <!-- Ajusta la página al ancho del dispositivo (diseño responsive) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título que aparece en la pestaña del navegador -->
     <title>EcoMarket | Sobre nosotros</title>
+    <!-- Conexión anticipada a los servidores de Google Fonts para cargar más rápido -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Carga la fuente Inter y Playfair Display desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <!-- Hojas de estilo del sitio: base, maquetación, componentes y animaciones -->
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/components.css">
     <link rel="stylesheet" href="../css/animations.css">
 </head>
+<!-- Cuerpo de la página: todo el contenido visible -->
 <body>
+    <!-- Cabecera fija (clase cabecera): logo, menú de navegación e iconos de buscar/carrito -->
     <header class="cabecera">
+        <!-- Logo (clase logo): icono de hoja y nombre de la tienda, enlaza al inicio -->
         <a href="../index.html" class="logo">
             <img src="../img/icons/hoja.svg" alt="">
             EcoMarket
         </a>
 
+        <!-- Menú de navegación principal (clase menu) -->
         <nav class="menu">
+            <!-- Enlaces del menú; la clase activo marca la página actual -->
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="productos.html">Productos</a></li>
@@ -28,27 +41,43 @@
             </ul>
         </nav>
 
+        <!-- Iconos de acceso rápido (clase accesos) -->
         <div class="accesos">
+            <!-- Icono de buscar: lleva al catálogo de productos -->
             <a href="productos.html"><img src="../img/icons/buscar.svg" alt="Buscar"></a>
+            <!-- Icono del carrito de compras (todavía sin página) -->
             <a href="#"><img src="../img/icons/carrito.svg" alt="Carrito"></a>
         </div>
     </header>
 
+    <!-- Contenido principal de la página Sobre nosotros -->
     <main>
+        <!-- Banner superior (clase banner): presentación de la página -->
         <section class="banner">
+            <!-- Insignia con el año de fundación (clase hero-insignia) -->
             <span class="hero-insignia">Desde 2021</span>
+            <!-- Título principal; la etiqueta em resalta la palabra consciente -->
             <h1>Consumo <em>consciente</em></h1>
+            <!-- Frase de presentación -->
             <p>Creemos que cada compra es una decisión sobre el planeta que queremos.</p>
         </section>
 
+        <!-- Sección de historia (clase historia): imagen y texto -->
         <section class="historia">
+            <!-- Imagen decorativa de hojas verdes -->
             <img src="../img/hero/hero.jpg" alt="Hojas verdes de una planta">
+            <!-- Texto de la historia (clase historia-texto) -->
             <div class="historia-texto">
+                <!-- Etiqueta pequeña sobre el título (clase seccion-etiqueta) -->
                 <span class="seccion-etiqueta">Nuestra historia</span>
+                <!-- Título de la historia -->
                 <h2>Comprar mejor no debería ser difícil</h2>
+                <!-- Párrafo: cómo nació EcoMarket -->
                 <p>EcoMarket nació en Bucaramanga, cuando un grupo de amigos se cansó de recorrer varias tiendas buscando productos que no vinieran envueltos en plástico. Empezamos con una mesa en un mercado campesino y hoy enviamos productos sostenibles a todo el país.</p>
+                <!-- Párrafo: con quién trabaja la tienda -->
                 <p>Trabajamos con pequeños productores y emprendimientos colombianos que comparten una idea sencilla: hacer las cosas bien, para que duren más y contaminen menos.</p>
 
+                <!-- Cifras destacadas de la tienda (clase cifras) -->
                 <ul class="cifras">
                     <li><strong>+5.000</strong> clientes</li>
                     <li><strong>40</strong> productores aliados</li>
@@ -57,29 +86,40 @@
             </div>
         </section>
 
+        <!-- Sección de principios (clase principios) -->
         <section class="principios">
+            <!-- Etiqueta pequeña de la sección -->
             <span class="seccion-etiqueta">Lo que nos mueve</span>
+            <!-- Título de la sección de principios -->
             <h2>Nuestros principios</h2>
 
+            <!-- Cuadrícula de principios (clase principios-grid) -->
             <div class="principios-grid">
+                <!-- Tarjeta de principio: Sin plástico -->
                 <article class="principio">
+                    <!-- Icono del principio -->
                     <img src="../img/icons/sin-plastico.svg" alt="">
+                    <!-- Nombre del principio -->
                     <h3>Sin plástico</h3>
+                    <!-- Descripción del principio -->
                     <p>Nada de empaques de un solo uso. Enviamos en cartón reciclado y papel.</p>
                 </article>
 
+                <!-- Tarjeta de principio: Comercio justo -->
                 <article class="principio">
                     <img src="../img/icons/comercio-justo.svg" alt="">
                     <h3>Comercio justo</h3>
                     <p>Pagamos precios justos a quienes hacen cada producto, sin intermediarios de más.</p>
                 </article>
 
+                <!-- Tarjeta de principio: Hecho en Colombia -->
                 <article class="principio">
                     <img src="../img/icons/local.svg" alt="">
                     <h3>Hecho en Colombia</h3>
                     <p>La mayoría de nuestros productos vienen de talleres y fincas del país.</p>
                 </article>
 
+                <!-- Tarjeta de principio: Huella reducida -->
                 <article class="principio">
                     <img src="../img/icons/planeta.svg" alt="">
                     <h3>Huella reducida</h3>
@@ -88,17 +128,28 @@
             </div>
         </section>
 
+        <!-- Sección de testimonios (clase testimonios) -->
         <section class="testimonios">
+            <!-- Etiqueta pequeña de la sección -->
             <span class="seccion-etiqueta">Testimonios</span>
+            <!-- Título de la sección de testimonios -->
             <h2>Lo que dicen nuestros clientes</h2>
 
+            <!-- Carrusel de testimonios (clase carrusel): oculta lo que se sale y se pausa al pasar el mouse -->
             <div class="carrusel">
+                <!-- Pista del carrusel (clase carrusel-pista): fila que se desplaza sola con una animación -->
                 <div class="carrusel-pista">
+                    <!-- Testimonio: Cristian Orlando -->
                     <figure class="testimonio">
+                        <!-- Estrellas de calificación del cliente -->
                         <span class="estrellas" role="img" aria-label="5 de 5 estrellas">★★★★★</span>
+                        <!-- Opinión del cliente -->
                         <p>"Pedí la lonchera y las bolsas de silicona y llegaron en dos días, sin un solo plástico en el empaque. Ya hice mi segundo pedido."</p>
+                        <!-- Autor del testimonio (clase testimonio-autor): foto, nombre y ciudad -->
                         <div class="testimonio-autor">
+                            <!-- Foto del cliente -->
                             <img src="../img/testimonios/cristian.jpg" alt="Foto de Cristian Orlando">
+                            <!-- Nombre y ciudad del cliente -->
                             <div>
                                 <strong>Cristian Orlando</strong>
                                 <span>La Guajira</span>
@@ -106,6 +157,7 @@
                         </div>
                     </figure>
 
+                    <!-- Testimonio: Arya Stark -->
                     <figure class="testimonio">
                         <span class="estrellas" role="img" aria-label="5 de 5 estrellas">★★★★★</span>
                         <p>"El champú sólido me dura mucho más de lo que pensaba. Buen precio y se nota la calidad."</p>
@@ -118,6 +170,7 @@
                         </div>
                     </figure>
 
+                    <!-- Testimonio: Sansón -->
                     <figure class="testimonio">
                         <span class="estrellas" role="img" aria-label="5 de 5 estrellas">★★★★★</span>
                         <p>"La esponja vegetal y el cepillo para platos cambiaron mi cocina. Duran muchísimo y no sueltan pedacitos de plástico."</p>
@@ -130,6 +183,7 @@
                         </div>
                     </figure>
 
+                    <!-- Testimonio: Víctor Plata -->
                     <figure class="testimonio">
                         <span class="estrellas" role="img" aria-label="5 de 5 estrellas">★★★★★</span>
                         <p>"Las gafas de bambú son livianas y se ven muy bien. Llegaron empacadas en cartón reciclado."</p>
@@ -142,6 +196,7 @@
                         </div>
                     </figure>
 
+                    <!-- Testimonio: Carlos de la Espriella -->
                     <figure class="testimonio">
                         <span class="estrellas" role="img" aria-label="4 de 5 estrellas">★★★★☆</span>
                         <p>"Los discos desmaquillantes son suaves y fáciles de lavar. Ojalá pronto traigan más colores."</p>
@@ -154,6 +209,7 @@
                         </div>
                     </figure>
 
+                    <!-- Testimonio: Mackalister Silva -->
                     <figure class="testimonio">
                         <span class="estrellas" role="img" aria-label="5 de 5 estrellas">★★★★★</span>
                         <p>"Compré la botella de vidrio para entrenar y no se me separa. No guarda olores y se lava facilito."</p>
@@ -166,6 +222,7 @@
                         </div>
                     </figure>
 
+                    <!-- Testimonio: Felipe Velasco -->
                     <figure class="testimonio">
                         <span class="estrellas" role="img" aria-label="5 de 5 estrellas">★★★★★</span>
                         <p>"Las medias de bambú son frescas y suaves, ideales para el calor. Ya pedí otro par."</p>
@@ -178,6 +235,7 @@
                         </div>
                     </figure>
 
+                    <!-- Testimonio: Johana Cepeda -->
                     <figure class="testimonio">
                         <span class="estrellas" role="img" aria-label="5 de 5 estrellas">★★★★★</span>
                         <p>"Me encanta comprarles a productores de mi ciudad. La atención fue rapidísima y muy amable."</p>
@@ -190,6 +248,7 @@
                         </div>
                     </figure>
 
+                    <!-- Testimonio: Juan David Paz -->
                     <figure class="testimonio">
                         <span class="estrellas" role="img" aria-label="5 de 5 estrellas">★★★★★</span>
                         <p>"Los pitillos de acero vienen con su cepillo para limpiarlos. Un detalle pequeño que hace la diferencia."</p>
@@ -202,6 +261,7 @@
                         </div>
                     </figure>
 
+                    <!-- Testimonio: Vicky Dávila -->
                     <figure class="testimonio">
                         <span class="estrellas" role="img" aria-label="4 de 5 estrellas">★★★★☆</span>
                         <p>"La vela de soya huele delicioso y dura bastante. El envío tardó un poco más de lo esperado."</p>
@@ -214,6 +274,7 @@
                         </div>
                     </figure>
 
+                    <!-- Copia del testimonio de Cristian Orlando para que el carrusel gire sin cortes (aria-hidden la oculta a lectores de pantalla) -->
                     <figure class="testimonio" aria-hidden="true">
                         <span class="estrellas">★★★★★</span>
                         <p>"Pedí la lonchera y las bolsas de silicona y llegaron en dos días, sin un solo plástico en el empaque. Ya hice mi segundo pedido."</p>
@@ -226,6 +287,7 @@
                         </div>
                     </figure>
 
+                    <!-- Copia del testimonio: Arya Stark -->
                     <figure class="testimonio" aria-hidden="true">
                         <span class="estrellas">★★★★★</span>
                         <p>"El champú sólido me dura mucho más de lo que pensaba. Buen precio y se nota la calidad."</p>
@@ -238,6 +300,7 @@
                         </div>
                     </figure>
 
+                    <!-- Copia del testimonio: Sansón -->
                     <figure class="testimonio" aria-hidden="true">
                         <span class="estrellas">★★★★★</span>
                         <p>"La esponja vegetal y el cepillo para platos cambiaron mi cocina. Duran muchísimo y no sueltan pedacitos de plástico."</p>
@@ -250,6 +313,7 @@
                         </div>
                     </figure>
 
+                    <!-- Copia del testimonio: Víctor Plata -->
                     <figure class="testimonio" aria-hidden="true">
                         <span class="estrellas">★★★★★</span>
                         <p>"Las gafas de bambú son livianas y se ven muy bien. Llegaron empacadas en cartón reciclado."</p>
@@ -262,6 +326,7 @@
                         </div>
                     </figure>
 
+                    <!-- Copia del testimonio: Carlos de la Espriella -->
                     <figure class="testimonio" aria-hidden="true">
                         <span class="estrellas">★★★★☆</span>
                         <p>"Los discos desmaquillantes son suaves y fáciles de lavar. Ojalá pronto traigan más colores."</p>
@@ -274,6 +339,7 @@
                         </div>
                     </figure>
 
+                    <!-- Copia del testimonio: Mackalister Silva -->
                     <figure class="testimonio" aria-hidden="true">
                         <span class="estrellas">★★★★★</span>
                         <p>"Compré la botella de vidrio para entrenar y no se me separa. No guarda olores y se lava facilito."</p>
@@ -286,6 +352,7 @@
                         </div>
                     </figure>
 
+                    <!-- Copia del testimonio: Felipe Velasco -->
                     <figure class="testimonio" aria-hidden="true">
                         <span class="estrellas">★★★★★</span>
                         <p>"Las medias de bambú son frescas y suaves, ideales para el calor. Ya pedí otro par."</p>
@@ -298,6 +365,7 @@
                         </div>
                     </figure>
 
+                    <!-- Copia del testimonio: Johana Cepeda -->
                     <figure class="testimonio" aria-hidden="true">
                         <span class="estrellas">★★★★★</span>
                         <p>"Me encanta comprarles a productores de mi ciudad. La atención fue rapidísima y muy amable."</p>
@@ -310,6 +378,7 @@
                         </div>
                     </figure>
 
+                    <!-- Copia del testimonio: Juan David Paz -->
                     <figure class="testimonio" aria-hidden="true">
                         <span class="estrellas">★★★★★</span>
                         <p>"Los pitillos de acero vienen con su cepillo para limpiarlos. Un detalle pequeño que hace la diferencia."</p>
@@ -322,6 +391,7 @@
                         </div>
                     </figure>
 
+                    <!-- Copia del testimonio: Vicky Dávila -->
                     <figure class="testimonio" aria-hidden="true">
                         <span class="estrellas">★★★★☆</span>
                         <p>"La vela de soya huele delicioso y dura bastante. El envío tardó un poco más de lo esperado."</p>
@@ -338,14 +408,20 @@
         </section>
     </main>
 
+    <!-- Pie de página (clase pie): marca, enlaces, contacto y legal -->
     <footer class="pie">
+        <!-- Cuadrícula de columnas del pie (clase pie-grid) -->
         <div class="pie-grid">
+            <!-- Columna de marca (clase pie-marca): logo, lema y redes sociales -->
             <div class="pie-marca">
+                <!-- Logo del pie de página, enlaza al inicio -->
                 <a href="../index.html" class="logo">
                     <img src="../img/icons/hoja.svg" alt="">
                     EcoMarket
                 </a>
+                <!-- Lema de la tienda -->
                 <p>Compras éticas para consumidores conscientes.</p>
+                <!-- Enlaces a redes sociales (clase redes), se abren en otra pestaña -->
                 <div class="redes">
                     <a href="https://instagram.com" target="_blank">Ig</a>
                     <a href="https://facebook.com" target="_blank">Fb</a>
@@ -353,8 +429,11 @@
                 </div>
             </div>
 
+            <!-- Columna Tienda: enlaces a las páginas del sitio -->
             <div>
+                <!-- Título de la columna Tienda -->
                 <h3>Tienda</h3>
+                <!-- Lista de enlaces de la tienda -->
                 <ul>
                     <li><a href="productos.html">Todos los productos</a></li>
                     <li><a href="sobre-nosotros.html">Nosotros</a></li>
@@ -362,8 +441,11 @@
                 </ul>
             </div>
 
+            <!-- Columna Contacto: correo, teléfono y ciudad -->
             <div>
+                <!-- Título de la columna Contacto -->
                 <h3>Contacto</h3>
+                <!-- Datos de contacto de la tienda -->
                 <ul>
                     <li>hola@ecomarket.com</li>
                     <li>+57 300 123 4567</li>
@@ -371,8 +453,11 @@
                 </ul>
             </div>
 
+            <!-- Columna Legal: términos y privacidad -->
             <div>
+                <!-- Título de la columna Legal -->
                 <h3>Legal</h3>
+                <!-- Enlaces a las páginas legales -->
                 <ul>
                     <li><a href="#">Términos y condiciones</a></li>
                     <li><a href="#">Política de privacidad</a></li>
@@ -380,6 +465,7 @@
             </div>
         </div>
 
+        <!-- Texto de derechos de autor (clase pie-copy) -->
         <p class="pie-copy">© 2026 EcoMarket. Todos los derechos reservados.</p>
     </footer>
 </body>

@@ -1,3 +1,4 @@
+/* Botón verde redondeado reutilizable (.btn) */
 .btn {
     display: inline-block;
     padding: 0.9em 1.8em;
@@ -12,10 +13,12 @@
     transition: background-color var(--transicion);
 }
 
+/* Hover del botón: oscurece el color de fondo */
 .btn:hover {
     background-color: var(--color-primario-oscuro);
 }
 
+/* Tarjeta de producto destacado del inicio: columna blanca con sombra */
 .tarjeta {
     display: flex;
     flex-direction: column;
@@ -25,12 +28,14 @@
     box-shadow: var(--sombra);
 }
 
+/* Imagen de la tarjeta: cuadrada y recortada con object-fit */
 .tarjeta img {
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
 }
 
+/* Cuerpo de la tarjeta: textos en columna con relleno */
 .tarjeta-cuerpo {
     display: flex;
     flex-direction: column;
@@ -39,20 +44,24 @@
     padding: var(--espacio-md);
 }
 
+/* Párrafo de la tarjeta en color de texto suave */
 .tarjeta-cuerpo p {
     color: var(--color-texto-suave);
 }
 
+/* Botón de la tarjeta: alineado a la izquierda y empujado al fondo */
 .tarjeta .btn {
     align-self: flex-start;
     margin-top: auto;
 }
 
+/* Variante pequeña del botón (.btn-pequeno) con menos relleno y letra */
 .btn-pequeno {
     padding: 0.5em 1.1em;
     font-size: 0.875rem;
 }
 
+/* Buscador de productos: caja blanca tipo píldora con ícono y campo */
 .buscador {
     display: flex;
     align-items: center;
@@ -63,10 +72,12 @@
     border-radius: var(--radio-pildora);
 }
 
+/* Ícono de lupa del buscador */
 .buscador img {
     width: 18px;
 }
 
+/* Campo de texto del buscador: sin borde ni fondo propio */
 .buscador input {
     width: 100%;
     border: none;
@@ -75,10 +86,12 @@
     font: inherit;
 }
 
+/* Buscador activo: borde verde cuando el campo tiene el foco */
 .buscador:focus-within {
     border-color: var(--color-primario);
 }
 
+/* Caja de filtro lateral: fondo blanco, bordes redondeados y sombra */
 .filtro {
     padding: var(--espacio-md);
     background-color: var(--color-blanco);
@@ -86,11 +99,13 @@
     box-shadow: var(--sombra);
 }
 
+/* Título de cada filtro */
 .filtro h2 {
     margin-bottom: var(--espacio-sm);
     font-size: 1.1rem;
 }
 
+/* Opciones del filtro: casilla y texto alineados en fila */
 .filtro label {
     display: flex;
     align-items: center;
@@ -100,14 +115,17 @@
     cursor: pointer;
 }
 
+/* Casillas y controles del filtro en color verde */
 .filtro input {
     accent-color: var(--color-primario);
 }
 
+/* Barra de rango de precio a todo el ancho */
 .filtro input[type="range"] {
     width: 100%;
 }
 
+/* Precios mínimo y máximo debajo de la barra, a cada extremo */
 .filtro-precios {
     display: flex;
     justify-content: space-between;
@@ -115,6 +133,7 @@
     color: var(--color-texto-suave);
 }
 
+/* Tarjeta de producto del catálogo: columna blanca con sombra */
 .producto {
     display: flex;
     flex-direction: column;
@@ -125,17 +144,20 @@
     scroll-margin-top: 6rem;
 }
 
+/* Contenedor de la imagen del producto: base para posicionar etiqueta y favorito */
 .producto-imagen {
     position: relative;
     overflow: hidden;
 }
 
+/* Imagen del producto: cuadrada y recortada con object-fit */
 .producto-imagen img {
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
 }
 
+/* Etiqueta verde sobre la imagen (ej. En stock), arriba a la izquierda */
 .etiqueta {
     position: absolute;
     top: var(--espacio-sm);
@@ -148,10 +170,12 @@
     font-weight: 600;
 }
 
+/* Etiqueta de producto agotado en color oscuro */
 .etiqueta.agotado {
     background-color: var(--color-texto);
 }
 
+/* Botón circular de favorito (corazón) arriba a la derecha de la imagen */
 .favorito {
     position: absolute;
     top: var(--espacio-sm);
@@ -166,11 +190,13 @@
     font-size: 1.1rem;
 }
 
+/* Favorito marcado: corazón rojo al hacer clic o al seleccionar el producto */
 .favorito:active,
 .producto:target .favorito {
     color: var(--color-error);
 }
 
+/* Información del producto: textos en columna con relleno */
 .producto-info {
     display: flex;
     flex-direction: column;
@@ -179,6 +205,7 @@
     padding: var(--espacio-md);
 }
 
+/* Categoría del producto: texto pequeño en mayúsculas y verde oscuro */
 .producto-categoria {
     font-size: 0.75rem;
     font-weight: 600;
@@ -187,10 +214,12 @@
     color: var(--color-primario-oscuro);
 }
 
+/* Nombre del producto */
 .producto-info h3 {
     font-size: 1.1rem;
 }
 
+/* Pie de la tarjeta: precio y botón en fila, pegados al fondo */
 .producto-pie {
     display: flex;
     justify-content: space-between;
@@ -199,22 +228,26 @@
     padding-top: var(--espacio-sm);
 }
 
+/* Precio del producto en negrita */
 .precio {
     font-size: 1.1rem;
     font-weight: 600;
 }
 
+/* Producto agotado: imagen en gris y semitransparente */
 .producto.agotado img {
     filter: grayscale(1);
     opacity: 0.7;
 }
 
+/* Producto agotado: botón gris y deshabilitado */
 .producto.agotado .btn {
     background-color: var(--color-borde);
     color: var(--color-texto-suave);
     pointer-events: none;
 }
 
+/* Paginación del catálogo: números centrados en fila */
 .paginacion {
     display: flex;
     flex-wrap: wrap;
@@ -223,6 +256,7 @@
     margin-top: var(--espacio-xl);
 }
 
+/* Cada número de página: cuadro blanco con borde */
 .paginacion a {
     display: grid;
     place-content: center;
@@ -235,17 +269,20 @@
     font-weight: 600;
 }
 
+/* Hover de la página: borde y texto verdes */
 .paginacion a:hover {
     border-color: var(--color-primario);
     color: var(--color-primario-oscuro);
 }
 
+/* Página actual: fondo verde y texto blanco */
 .paginacion a.activa {
     border-color: var(--color-primario);
     background-color: var(--color-primario);
     color: var(--color-blanco);
 }
 
+/* Etiqueta pequeña verde clara encima de los títulos de sección */
 .seccion-etiqueta {
     display: inline-block;
     align-self: flex-start;
@@ -260,6 +297,7 @@
     text-transform: uppercase;
 }
 
+/* Lista de cifras destacadas en fila con línea superior */
 .cifras {
     display: flex;
     flex-wrap: wrap;
@@ -269,6 +307,7 @@
     list-style: none;
 }
 
+/* Cada cifra: número arriba y descripción abajo */
 .cifras li {
     display: flex;
     flex-direction: column;
@@ -276,18 +315,21 @@
     color: var(--color-texto-suave);
 }
 
+/* Número de la cifra grande y en verde oscuro */
 .cifras strong {
     font-family: var(--fuente-titulos);
     font-size: 1.75rem;
     color: var(--color-primario-oscuro);
 }
 
+/* Tarjeta de principio o valor de la empresa con fondo suave */
 .principio {
     padding: var(--espacio-lg);
     border-radius: var(--radio);
     background-color: var(--color-fondo);
 }
 
+/* Ícono del principio dentro de un círculo verde claro */
 .principio img {
     width: 56px;
     height: 56px;
@@ -297,14 +339,17 @@
     background-color: rgba(46, 204, 113, 0.12);
 }
 
+/* Título del principio */
 .principio h3 {
     margin-bottom: var(--espacio-sm);
 }
 
+/* Texto del principio en color suave */
 .principio p {
     color: var(--color-texto-suave);
 }
 
+/* Tarjeta de testimonio de cliente: blanca, ancho fijo y con sombra */
 .testimonio {
     display: flex;
     flex-direction: column;
@@ -318,15 +363,18 @@
     text-align: left;
 }
 
+/* Estrellas de calificación en color amarillo */
 .estrellas {
     color: var(--color-estrella);
     letter-spacing: 0.1em;
 }
 
+/* Texto del testimonio en cursiva */
 .testimonio p {
     font-style: italic;
 }
 
+/* Autor del testimonio: foto y nombre en fila, al fondo de la tarjeta */
 .testimonio-autor {
     display: flex;
     align-items: center;
@@ -334,6 +382,7 @@
     margin-top: auto;
 }
 
+/* Foto del autor redonda */
 .testimonio-autor img {
     width: 48px;
     height: 48px;
@@ -341,12 +390,14 @@
     object-fit: cover;
 }
 
+/* Lugar del autor del testimonio en texto pequeño y suave */
 .testimonio-autor span {
     display: block;
     font-size: 0.875rem;
     color: var(--color-texto-suave);
 }
 
+/* Formulario de contacto: caja blanca con campos en columna */
 .formulario {
     display: flex;
     flex-direction: column;
@@ -357,16 +408,19 @@
     box-shadow: var(--sombra);
 }
 
+/* Grupo de campo: etiqueta, entrada y mensaje de error en columna */
 .campo {
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
 }
 
+/* Etiqueta del campo en negrita */
 .campo label {
     font-weight: 600;
 }
 
+/* Entradas y área de texto: ancho completo, borde gris y redondeadas */
 .campo input,
 .campo textarea {
     width: 100%;
@@ -378,16 +432,19 @@
     outline: none;
 }
 
+/* Área de texto: solo se puede agrandar en vertical */
 .campo textarea {
     resize: vertical;
 }
 
+/* Campo con foco: borde más oscuro y fondo blanco */
 .campo input:focus,
 .campo textarea:focus {
     border-color: var(--color-texto-suave);
     background-color: var(--color-blanco);
 }
 
+/* Campo inválido: borde rojo */
 .campo input:focus:invalid,
 .campo textarea:focus:invalid,
 .campo input:not(:placeholder-shown):invalid,
@@ -395,26 +452,31 @@
     border-color: var(--color-error);
 }
 
+/* Campo válido ya escrito: borde verde */
 .campo input:not(:placeholder-shown):valid,
 .campo textarea:not(:placeholder-shown):valid {
     border-color: var(--color-primario);
 }
 
+/* Mensaje de error del campo: oculto por defecto y en rojo */
 .campo-error {
     display: none;
     font-size: 0.8rem;
     color: var(--color-error);
 }
 
+/* Muestra el mensaje de error cuando el campo escrito es inválido */
 .campo input:not(:placeholder-shown):invalid + .campo-error,
 .campo textarea:not(:placeholder-shown):invalid + .campo-error {
     display: block;
 }
 
+/* Botón de enviar del formulario alineado a la izquierda */
 .formulario .btn {
     align-self: flex-start;
 }
 
+/* Título de la sede: ícono y texto en mayúsculas en fila */
 .contacto-sede {
     display: flex;
     align-items: center;
@@ -425,10 +487,12 @@
     text-transform: uppercase;
 }
 
+/* Ícono de la sede */
 .contacto-sede img {
     width: 22px;
 }
 
+/* Contenedor del mapa: bordes redondeados y sombra */
 .mapa {
     position: relative;
     border-radius: var(--radio);
@@ -436,12 +500,14 @@
     box-shadow: var(--sombra);
 }
 
+/* Imagen del mapa: proporción 3:2 y recortada con object-fit */
 .mapa img {
     width: 100%;
     aspect-ratio: 3 / 2;
     object-fit: cover;
 }
 
+/* Dirección sobre el mapa: pegada abajo con degradado oscuro */
 .mapa-direccion {
     position: absolute;
     left: 0;
@@ -454,10 +520,12 @@
     color: var(--color-blanco);
 }
 
+/* Texto secundario de la dirección más pequeño */
 .mapa-direccion span {
     font-size: 0.875rem;
 }
 
+/* Caja de dato de contacto (teléfono, correo) con borde */
 .dato {
     padding: var(--espacio-md);
     background-color: var(--color-blanco);
@@ -465,28 +533,34 @@
     border-radius: var(--radio);
 }
 
+/* Ícono del dato de contacto */
 .dato img {
     width: 24px;
     margin-bottom: var(--espacio-sm);
 }
 
+/* Título del dato de contacto */
 .dato h3 {
     font-size: 1rem;
 }
 
+/* Texto del dato de contacto en color suave */
 .dato p {
     color: var(--color-texto-suave);
 }
 
+/* Texto que invita a seguir las redes en color suave */
 .contacto-redes-texto {
     color: var(--color-texto-suave);
 }
 
+/* Fila de íconos de redes sociales */
 .redes-sociales {
     display: flex;
     gap: var(--espacio-md);
 }
 
+/* Cada red social: botón circular blanco con borde y sombra */
 .redes-sociales a {
     display: grid;
     place-content: center;
@@ -498,6 +572,7 @@
     box-shadow: var(--sombra);
 }
 
+/* Ícono de la red social */
 .redes-sociales img {
     width: 22px;
 }

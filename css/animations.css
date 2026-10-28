@@ -1,107 +1,134 @@
+/* Tarjetas destacadas del inicio: transición suave de movimiento y sombra */
 .tarjeta {
     transition: transform var(--transicion), box-shadow var(--transicion);
 }
 
+/* Hover de la tarjeta: la sube 8px y le pone una sombra más fuerte */
 .tarjeta:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
 }
 
+/* Tarjetas de producto: transición suave de movimiento y sombra */
 .producto {
     transition: transform var(--transicion), box-shadow var(--transicion);
 }
 
+/* Hover del producto: lo sube un poco y aumenta la sombra */
 .producto:hover {
     transform: translateY(-6px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
 }
 
+/* Imagen del producto: transición lenta para el zoom */
 .producto-imagen img {
     transition: transform 0.5s ease;
 }
 
+/* Al pasar sobre el producto: hace un zoom suave a su imagen */
 .producto:hover .producto-imagen img {
     transform: scale(1.05);
 }
 
+/* Botón de favorito (corazón): transición de color y tamaño */
 .favorito {
     transition: color var(--transicion), transform var(--transicion);
 }
 
+/* Hover del favorito: agranda un poco el corazón */
 .favorito:hover {
     transform: scale(1.15);
 }
 
+/* Buscador de productos: transición suave del color del borde */
 .buscador {
     transition: border-color var(--transicion);
 }
 
+/* Enlaces de la paginación: transición de fondo, borde y color */
 .paginacion a {
     transition: background-color var(--transicion), border-color var(--transicion), color var(--transicion);
 }
 
+/* Tarjetas de principios (Nosotros): transición de movimiento */
 .principio {
     transition: transform var(--transicion);
 }
 
+/* Hover del principio: lo sube un poco */
 .principio:hover {
     transform: translateY(-6px);
 }
 
+/* Icono del principio: transición para el zoom */
 .principio img {
     transition: transform var(--transicion);
 }
 
+/* Al pasar sobre el principio: agranda su icono */
 .principio:hover img {
     transform: scale(1.1);
 }
 
+/* Animación desplazar: mueve la pista del carrusel a la izquierda la mitad de su ancho */
 @keyframes desplazar {
+    /* Inicio: la pista en su posición original */
     from {
         transform: translateX(0);
     }
 
+    /* Final: la pista corrida a la izquierda la mitad de su ancho */
     to {
         transform: translateX(-50%);
     }
 }
 
+/* Pista del carrusel de testimonios: se desplaza sin parar en un ciclo de 80 segundos */
 .carrusel-pista {
     animation: desplazar 80s linear infinite;
 }
 
+/* Al pasar el mouse sobre el carrusel: pausa el desplazamiento */
 .carrusel:hover .carrusel-pista {
     animation-play-state: paused;
 }
 
+/* Tarjetas de testimonio: transición de movimiento y sombra */
 .testimonio {
     transition: transform var(--transicion), box-shadow var(--transicion);
 }
 
+/* Hover del testimonio: lo sube un poco y aumenta la sombra */
 .testimonio:hover {
     transform: translateY(-6px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
 }
 
+/* Campos del formulario de contacto: transición de borde y fondo */
 .campo input,
 .campo textarea {
     transition: border-color var(--transicion), background-color var(--transicion);
 }
 
+/* Iconos de redes sociales en contacto: transición de tamaño y borde */
 .redes-sociales a {
     transition: transform var(--transicion), border-color var(--transicion);
 }
 
+/* Hover de redes sociales: agranda el icono y pone el borde verde */
 .redes-sociales a:hover {
     transform: scale(1.15);
     border-color: var(--color-primario);
 }
 
+/* Movimiento reducido (cualquier pantalla, si el usuario lo pide en su sistema): quita la animación del carrusel */
 @media (prefers-reduced-motion: reduce) {
+    /* Carrusel: permite moverlo a mano con scroll horizontal */
     .carrusel {
         overflow-x: auto;
     }
 
+    /* Pista del carrusel: sin animación automática */
     .carrusel-pista {
         animation: none;
     }

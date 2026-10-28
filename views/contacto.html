@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
+<!-- Cabecera del documento: metadatos, título y hojas de estilo -->
 <head>
+    <!-- Codificación de caracteres UTF-8 para mostrar tildes y ñ -->
     <meta charset="UTF-8">
+    <!-- Ajusta el ancho de la página al dispositivo (diseño responsive) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título que aparece en la pestaña del navegador -->
     <title>EcoMarket | Contacto</title>
+    <!-- Conexión previa a los servidores de Google Fonts para que cargue más rápido -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Carga la fuente Inter y Playfair Display desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <!-- Hojas de estilo del sitio: base, estructura, componentes y animaciones -->
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/components.css">
     <link rel="stylesheet" href="../css/animations.css">
 </head>
+<!-- Cuerpo de la página: todo el contenido visible -->
 <body>
+    <!-- Cabecera fija: logo, menú de navegación e iconos de buscar/carrito (class cabecera) -->
     <header class="cabecera">
+        <!-- Logo (class logo): icono de hoja y nombre, enlaza al inicio -->
         <a href="../index.html" class="logo">
             <img src="../img/icons/hoja.svg" alt="">
             EcoMarket
         </a>
 
+        <!-- Menú de navegación principal (class menu) -->
         <nav class="menu">
+            <!-- Enlaces a las páginas del sitio; la class activo marca la página actual -->
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="productos.html">Productos</a></li>
@@ -28,62 +40,91 @@
             </ul>
         </nav>
 
+        <!-- Accesos rápidos (class accesos): iconos de buscar y carrito -->
         <div class="accesos">
+            <!-- Icono de buscar: lleva a la página de productos -->
             <a href="productos.html"><img src="../img/icons/buscar.svg" alt="Buscar"></a>
+            <!-- Icono del carrito de compras (todavía sin enlace) -->
             <a href="#"><img src="../img/icons/carrito.svg" alt="Carrito"></a>
         </div>
     </header>
 
+    <!-- Contenido principal de la página de contacto (class contacto) -->
     <main class="contacto">
+        <!-- Encabezado de la página: título e introducción (class contacto-encabezado) -->
         <div class="contacto-encabezado">
+            <!-- Título principal de la página -->
             <h1>Estamos para ayudarte</h1>
+            <!-- Texto de introducción -->
             <p>¿Tienes una pregunta sobre un producto o sobre tu pedido? Escríbenos y te respondemos en menos de 24 horas.</p>
         </div>
 
+        <!-- Cuadrícula con el formulario y la información de contacto (class contacto-grid) -->
         <div class="contacto-grid">
+            <!-- Formulario de contacto (class formulario); action # aún no envía a ningún servidor -->
             <form class="formulario" action="#">
+                <!-- Campo Nombre (class campo): etiqueta, caja de texto y mensaje de error -->
                 <div class="campo">
+                    <!-- Etiqueta y caja de texto del nombre (obligatorio, mínimo 3 letras) -->
                     <label for="nombre">Nombre</label>
                     <input type="text" id="nombre" name="nombre" placeholder="Ej. María Fernanda López" required minlength="3">
+                    <!-- Mensaje de error del nombre (class campo-error) -->
                     <span class="campo-error">Escribe tu nombre, mínimo 3 letras.</span>
                 </div>
 
+                <!-- Campo Email (class campo): etiqueta, caja de correo y mensaje de error -->
                 <div class="campo">
+                    <!-- Etiqueta y caja del correo (obligatorio, valida el formato de email) -->
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="nombre@correo.com" required>
+                    <!-- Mensaje de error del email (class campo-error) -->
                     <span class="campo-error">Escribe un correo válido, por ejemplo nombre@correo.com.</span>
                 </div>
 
+                <!-- Campo Mensaje (class campo): etiqueta, área de texto y mensaje de error -->
                 <div class="campo">
+                    <!-- Etiqueta y área de texto del mensaje (obligatorio, mínimo 10 caracteres) -->
                     <label for="mensaje">Mensaje</label>
                     <textarea id="mensaje" name="mensaje" rows="5" placeholder="¿En qué te podemos ayudar?" required minlength="10"></textarea>
+                    <!-- Mensaje de error del mensaje (class campo-error) -->
                     <span class="campo-error">Cuéntanos un poco más, mínimo 10 caracteres.</span>
                 </div>
 
+                <!-- Botón para enviar el formulario (class btn) -->
                 <button type="submit" class="btn">Enviar mensaje</button>
             </form>
 
+            <!-- Columna de información de contacto (class contacto-info) -->
             <div class="contacto-info">
+                <!-- Título Nuestra sede con icono de ubicación (class contacto-sede) -->
                 <h2 class="contacto-sede">
                     <img src="../img/icons/local.svg" alt="">
                     Nuestra sede
                 </h2>
 
+                <!-- Mapa con la dirección de la tienda (class mapa) -->
                 <div class="mapa">
+                    <!-- Imagen del mapa con la ubicación en Bucaramanga -->
                     <img src="../img/hero/mapa.svg" alt="Mapa con la ubicación de EcoMarket en Bucaramanga">
+                    <!-- Recuadro con dirección y horario sobre el mapa (class mapa-direccion) -->
                     <div class="mapa-direccion">
+                        <!-- Dirección de la sede -->
                         <strong>Calle 36 # 27-50, Bucaramanga</strong>
+                        <!-- Horario de atención -->
                         <span>Lunes a viernes, 8:00 a.m. a 6:00 p.m.</span>
                     </div>
                 </div>
 
+                <!-- Datos de contacto: correo y teléfono (class contacto-datos) -->
                 <div class="contacto-datos">
+                    <!-- Dato de contacto (class dato): icono, título y correo electrónico -->
                     <div class="dato">
                         <img src="../img/icons/correo.svg" alt="">
                         <h3>Escríbenos</h3>
                         <p>hola@ecomarket.com</p>
                     </div>
 
+                    <!-- Dato de contacto (class dato): icono, título y número de teléfono -->
                     <div class="dato">
                         <img src="../img/icons/telefono.svg" alt="">
                         <h3>Llámanos</h3>
@@ -91,7 +132,9 @@
                     </div>
                 </div>
 
+                <!-- Texto que invita a seguir las redes (class contacto-redes-texto) -->
                 <p class="contacto-redes-texto">Síguenos en redes</p>
+                <!-- Iconos de redes sociales: Instagram, Facebook y TikTok (class redes-sociales) -->
                 <div class="redes-sociales">
                     <a href="https://instagram.com" target="_blank" aria-label="Instagram"><img src="../img/icons/instagram.svg" alt=""></a>
                     <a href="https://facebook.com" target="_blank" aria-label="Facebook"><img src="../img/icons/facebook.svg" alt=""></a>
@@ -101,14 +144,20 @@
         </div>
     </main>
 
+    <!-- Pie de página (class pie): marca, enlaces, contacto y legal -->
     <footer class="pie">
+        <!-- Cuadrícula con las columnas del pie (class pie-grid) -->
         <div class="pie-grid">
+            <!-- Columna de marca (class pie-marca): logo, lema y redes sociales -->
             <div class="pie-marca">
+                <!-- Logo del pie, enlaza al inicio -->
                 <a href="../index.html" class="logo">
                     <img src="../img/icons/hoja.svg" alt="">
                     EcoMarket
                 </a>
+                <!-- Lema de la tienda -->
                 <p>Compras éticas para consumidores conscientes.</p>
+                <!-- Enlaces a redes sociales (class redes) -->
                 <div class="redes">
                     <a href="https://instagram.com" target="_blank">Ig</a>
                     <a href="https://facebook.com" target="_blank">Fb</a>
@@ -116,8 +165,11 @@
                 </div>
             </div>
 
+            <!-- Columna Tienda: enlaces a las páginas del sitio -->
             <div>
+                <!-- Título de la columna Tienda -->
                 <h3>Tienda</h3>
+                <!-- Lista de enlaces de la tienda -->
                 <ul>
                     <li><a href="productos.html">Todos los productos</a></li>
                     <li><a href="sobre-nosotros.html">Nosotros</a></li>
@@ -125,8 +177,11 @@
                 </ul>
             </div>
 
+            <!-- Columna Contacto: correo, teléfono y ciudad -->
             <div>
+                <!-- Título de la columna Contacto -->
                 <h3>Contacto</h3>
+                <!-- Lista con los datos de contacto -->
                 <ul>
                     <li>hola@ecomarket.com</li>
                     <li>+57 300 123 4567</li>
@@ -134,8 +189,11 @@
                 </ul>
             </div>
 
+            <!-- Columna Legal: términos y privacidad -->
             <div>
+                <!-- Título de la columna Legal -->
                 <h3>Legal</h3>
+                <!-- Lista de enlaces legales (todavía sin página) -->
                 <ul>
                     <li><a href="#">Términos y condiciones</a></li>
                     <li><a href="#">Política de privacidad</a></li>
@@ -143,6 +201,7 @@
             </div>
         </div>
 
+        <!-- Texto de derechos de autor (class pie-copy) -->
         <p class="pie-copy">© 2026 EcoMarket. Todos los derechos reservados.</p>
     </footer>
 </body>

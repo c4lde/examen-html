@@ -1,25 +1,38 @@
 <!DOCTYPE html>
+<!-- Documento HTML en español -->
 <html lang="es">
+<!-- Cabecera del documento: configuración, título, fuentes y estilos -->
 <head>
+    <!-- Codificación de caracteres UTF-8 (permite tildes y ñ) -->
     <meta charset="UTF-8">
+    <!-- Ajusta la página al ancho del dispositivo (diseño responsive) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título que aparece en la pestaña del navegador -->
     <title>EcoMarket | Productos</title>
+    <!-- Conexión anticipada a los servidores de Google Fonts para cargar más rápido -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Carga la fuente Inter y Playfair Display desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <!-- Hojas de estilo del sitio: base, maquetación, componentes y animaciones -->
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/components.css">
     <link rel="stylesheet" href="../css/animations.css">
 </head>
+<!-- Cuerpo de la página: todo el contenido visible -->
 <body>
+    <!-- Cabecera fija (clase cabecera): logo, menú de navegación e iconos de buscar/carrito -->
     <header class="cabecera">
+        <!-- Logo (clase logo): icono de hoja y nombre de la tienda, enlaza al inicio -->
         <a href="../index.html" class="logo">
             <img src="../img/icons/hoja.svg" alt="">
             EcoMarket
         </a>
 
+        <!-- Menú de navegación principal (clase menu) -->
         <nav class="menu">
+            <!-- Enlaces del menú; la clase activo marca la página actual -->
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="productos.html" class="activo">Productos</a></li>
@@ -28,29 +41,45 @@
             </ul>
         </nav>
 
+        <!-- Iconos de acceso rápido (clase accesos) -->
         <div class="accesos">
+            <!-- Icono de buscar: lleva al catálogo de productos -->
             <a href="productos.html"><img src="../img/icons/buscar.svg" alt="Buscar"></a>
+            <!-- Icono del carrito de compras (todavía sin página) -->
             <a href="#"><img src="../img/icons/carrito.svg" alt="Carrito"></a>
         </div>
     </header>
 
+    <!-- Contenido principal: catálogo de productos (clase catalogo) -->
     <main class="catalogo">
+        <!-- Encabezado del catálogo (clase catalogo-encabezado): título y buscador -->
         <div class="catalogo-encabezado">
+            <!-- Bloque con el título y la cantidad de productos -->
             <div>
+                <!-- Título principal de la página -->
                 <h1>Nuestros productos</h1>
+                <!-- Texto con el número de productos mostrados -->
                 <p>Mostrando 20 productos sostenibles</p>
             </div>
 
+            <!-- Buscador de productos (clase buscador) -->
             <label class="buscador">
+                <!-- Icono de lupa del buscador -->
                 <img src="../img/icons/buscar.svg" alt="">
+                <!-- Campo de texto para buscar productos -->
                 <input type="search" placeholder="Buscar productos..." aria-label="Buscar productos">
             </label>
         </div>
 
+        <!-- Contenido del catálogo (clase catalogo-contenido): filtros y productos -->
         <div class="catalogo-contenido">
+            <!-- Barra lateral de filtros (clase filtros) -->
             <aside class="filtros">
+                <!-- Filtro por categorías (casillas de verificación) -->
                 <div class="filtro">
+                    <!-- Título del filtro de categorías -->
                     <h2>Categorías</h2>
+                    <!-- Opciones de categoría: cada label tiene su casilla -->
                     <label><input type="checkbox" checked> Todas</label>
                     <label><input type="checkbox"> Hogar</label>
                     <label><input type="checkbox"> Moda</label>
@@ -58,41 +87,62 @@
                     <label><input type="checkbox"> Alimentos</label>
                 </div>
 
+                <!-- Filtro por precio -->
                 <div class="filtro">
+                    <!-- Título del filtro de precio -->
                     <h2>Precio</h2>
+                    <!-- Barra deslizante para elegir el precio máximo -->
                     <input type="range" min="0" max="100000" value="60000" aria-label="Precio máximo">
+                    <!-- Precios mínimo y máximo del rango (clase filtro-precios) -->
                     <div class="filtro-precios">
                         <span>$0</span>
                         <span>$100.000</span>
                     </div>
                 </div>
 
+                <!-- Filtro por disponibilidad (botones de opción) -->
                 <div class="filtro">
+                    <!-- Título del filtro de disponibilidad -->
                     <h2>Disponibilidad</h2>
+                    <!-- Opciones de disponibilidad: solo se elige una porque comparten name="stock" -->
                     <label><input type="radio" name="stock" checked> Todos</label>
                     <label><input type="radio" name="stock"> En stock</label>
                     <label><input type="radio" name="stock"> Agotados</label>
                 </div>
             </aside>
 
+            <!-- Columna derecha: cuadrícula de productos y paginación -->
             <div>
+                <!-- Cuadrícula de productos (clase productos-grid) -->
                 <div class="productos-grid">
+                    <!-- Tarjeta de producto: Cepillo de bambú -->
                     <article class="producto" id="p1">
+                        <!-- Zona de imagen del producto (clase producto-imagen) -->
                         <div class="producto-imagen">
+                            <!-- Foto del producto -->
                             <img src="../img/products/cepillo.jpg" alt="Cepillo de dientes de bambú">
+                            <!-- Etiqueta de disponibilidad (clase etiqueta): En stock o Agotado -->
                             <span class="etiqueta">En stock</span>
+                            <!-- Botón de favorito con forma de corazón (clase favorito) -->
                             <a href="#p1" class="favorito" aria-label="Agregar a favoritos">♥</a>
                         </div>
+                        <!-- Información del producto (clase producto-info) -->
                         <div class="producto-info">
+                            <!-- Categoría del producto -->
                             <span class="producto-categoria">Cuidado personal</span>
+                            <!-- Nombre del producto -->
                             <h3>Cepillo de bambú</h3>
+                            <!-- Pie de la tarjeta (clase producto-pie): precio y botón -->
                             <div class="producto-pie">
+                                <!-- Precio del producto -->
                                 <span class="precio">$12.900</span>
+                                <!-- Botón para agregar el producto al carrito -->
                                 <a href="#" class="btn btn-pequeno">Agregar</a>
                             </div>
                         </div>
                     </article>
 
+                    <!-- Tarjeta de producto: Bolsa de malla -->
                     <article class="producto" id="p2">
                         <div class="producto-imagen">
                             <img src="../img/products/malla.jpg" alt="Bolsa de malla de algodón con naranjas">
@@ -109,6 +159,7 @@
                         </div>
                     </article>
 
+                    <!-- Tarjeta de producto: Botella de vidrio -->
                     <article class="producto" id="p3">
                         <div class="producto-imagen">
                             <img src="../img/products/botella.jpg" alt="Botella de vidrio con tapa hermética">
@@ -125,6 +176,7 @@
                         </div>
                     </article>
 
+                    <!-- Tarjeta de producto: Envoltura de cera de abeja -->
                     <article class="producto" id="p4">
                         <div class="producto-imagen">
                             <img src="../img/products/envoltura.jpg" alt="Envoltura de cera de abeja sobre una tabla de madera">
@@ -141,6 +193,7 @@
                         </div>
                     </article>
 
+                    <!-- Tarjeta de producto: Champú sólido (agotado, la clase agotado lo pone en gris) -->
                     <article class="producto agotado" id="p5">
                         <div class="producto-imagen">
                             <img src="../img/products/shampoo.jpg" alt="Barra de champú sólido en una jabonera">
@@ -157,6 +210,7 @@
                         </div>
                     </article>
 
+                    <!-- Tarjeta de producto: Bolsas de silicona -->
                     <article class="producto" id="p6">
                         <div class="producto-imagen">
                             <img src="../img/products/bolsa.jpg" alt="Bolsa de silicona reutilizable con verduras">
@@ -173,6 +227,7 @@
                         </div>
                     </article>
 
+                    <!-- Tarjeta de producto: Camiseta de algodón orgánico -->
                     <article class="producto" id="p7">
                         <div class="producto-imagen">
                             <img src="../img/products/camiseta.jpg" alt="Camiseta blanca de algodón orgánico en un gancho">
@@ -189,6 +244,7 @@
                         </div>
                     </article>
 
+                    <!-- Tarjeta de producto: Vela de soya -->
                     <article class="producto" id="p8">
                         <div class="producto-imagen">
                             <img src="../img/products/vela.jpg" alt="Vela de soya en frasco de vidrio ámbar">
@@ -205,6 +261,7 @@
                         </div>
                     </article>
 
+                    <!-- Tarjeta de producto: Bálsamo labial natural -->
                     <article class="producto" id="p9">
                         <div class="producto-imagen">
                             <img src="../img/products/balsamo.jpg" alt="Bálsamo labial natural junto a un frasco de manteca">
@@ -221,6 +278,7 @@
                         </div>
                     </article>
 
+                    <!-- Tarjeta de producto: Lonchera de acero -->
                     <article class="producto" id="p10">
                         <div class="producto-imagen">
                             <img src="../img/products/lonchera.jpg" alt="Lonchera de acero inoxidable con un sándwich">
@@ -237,6 +295,7 @@
                         </div>
                     </article>
 
+                    <!-- Tarjeta de producto: Bolsa de tela -->
                     <article class="producto" id="p11">
                         <div class="producto-imagen">
                             <img src="../img/products/tote.jpg" alt="Bolsa de tela de algodón">
@@ -253,6 +312,7 @@
                         </div>
                     </article>
 
+                    <!-- Tarjeta de producto: Pitillos de acero -->
                     <article class="producto" id="p12">
                         <div class="producto-imagen">
                             <img src="../img/products/pitillo.jpg" alt="Pitillos de acero inoxidable con cepillo limpiador">
@@ -269,6 +329,7 @@
                         </div>
                     </article>
 
+                    <!-- Tarjeta de producto: Discos desmaquillantes -->
                     <article class="producto" id="p13">
                         <div class="producto-imagen">
                             <img src="../img/products/desmaquillante.jpg" alt="Discos desmaquillantes reutilizables en un frasco de bambú">
@@ -285,6 +346,7 @@
                         </div>
                     </article>
 
+                    <!-- Tarjeta de producto: Billetera de corcho (agotado) -->
                     <article class="producto agotado" id="p14">
                         <div class="producto-imagen">
                             <img src="../img/products/billetera.jpg" alt="Billetera de corcho">
@@ -301,6 +363,7 @@
                         </div>
                     </article>
 
+                    <!-- Tarjeta de producto: Utensilios de bambú -->
                     <article class="producto" id="p15">
                         <div class="producto-imagen">
                             <img src="../img/products/cubiertos.jpg" alt="Utensilios de cocina de bambú">
@@ -317,6 +380,7 @@
                         </div>
                     </article>
 
+                    <!-- Tarjeta de producto: Esponja vegetal -->
                     <article class="producto" id="p16">
                         <div class="producto-imagen">
                             <img src="../img/products/esponja.jpg" alt="Esponja vegetal de luffa">
@@ -333,6 +397,7 @@
                         </div>
                     </article>
 
+                    <!-- Tarjeta de producto: Gafas de bambú -->
                     <article class="producto" id="p17">
                         <div class="producto-imagen">
                             <img src="../img/products/gafas.jpg" alt="Gafas de sol de bambú sobre su estuche">
@@ -349,6 +414,7 @@
                         </div>
                     </article>
 
+                    <!-- Tarjeta de producto: Peine de madera -->
                     <article class="producto" id="p18">
                         <div class="producto-imagen">
                             <img src="../img/products/peine.jpg" alt="Peine de madera">
@@ -365,6 +431,7 @@
                         </div>
                     </article>
 
+                    <!-- Tarjeta de producto: Cepillo para platos -->
                     <article class="producto" id="p19">
                         <div class="producto-imagen">
                             <img src="../img/products/cepillo-platos.jpg" alt="Cepillos para platos de madera y fibra de coco">
@@ -381,6 +448,7 @@
                         </div>
                     </article>
 
+                    <!-- Tarjeta de producto: Medias de bambú -->
                     <article class="producto" id="p20">
                         <div class="producto-imagen">
                             <img src="../img/products/medias.jpg" alt="Par de medias grises de fibra de bambú">
@@ -398,6 +466,7 @@
                     </article>
                 </div>
 
+                <!-- Paginación del catálogo (clase paginacion); la clase activa marca la página actual -->
                 <nav class="paginacion" aria-label="Paginación">
                     <a href="#">← Anterior</a>
                     <a href="#" class="activa">1</a>
@@ -409,14 +478,20 @@
         </div>
     </main>
 
+    <!-- Pie de página (clase pie): marca, enlaces, contacto y legal -->
     <footer class="pie">
+        <!-- Cuadrícula de columnas del pie (clase pie-grid) -->
         <div class="pie-grid">
+            <!-- Columna de marca (clase pie-marca): logo, lema y redes sociales -->
             <div class="pie-marca">
+                <!-- Logo del pie de página, enlaza al inicio -->
                 <a href="../index.html" class="logo">
                     <img src="../img/icons/hoja.svg" alt="">
                     EcoMarket
                 </a>
+                <!-- Lema de la tienda -->
                 <p>Compras éticas para consumidores conscientes.</p>
+                <!-- Enlaces a redes sociales (clase redes), se abren en otra pestaña -->
                 <div class="redes">
                     <a href="https://instagram.com" target="_blank">Ig</a>
                     <a href="https://facebook.com" target="_blank">Fb</a>
@@ -424,8 +499,11 @@
                 </div>
             </div>
 
+            <!-- Columna Tienda: enlaces a las páginas del sitio -->
             <div>
+                <!-- Título de la columna Tienda -->
                 <h3>Tienda</h3>
+                <!-- Lista de enlaces de la tienda -->
                 <ul>
                     <li><a href="productos.html">Todos los productos</a></li>
                     <li><a href="sobre-nosotros.html">Nosotros</a></li>
@@ -433,8 +511,11 @@
                 </ul>
             </div>
 
+            <!-- Columna Contacto: correo, teléfono y ciudad -->
             <div>
+                <!-- Título de la columna Contacto -->
                 <h3>Contacto</h3>
+                <!-- Datos de contacto de la tienda -->
                 <ul>
                     <li>hola@ecomarket.com</li>
                     <li>+57 300 123 4567</li>
@@ -442,8 +523,11 @@
                 </ul>
             </div>
 
+            <!-- Columna Legal: términos y privacidad -->
             <div>
+                <!-- Título de la columna Legal -->
                 <h3>Legal</h3>
+                <!-- Enlaces a las páginas legales -->
                 <ul>
                     <li><a href="#">Términos y condiciones</a></li>
                     <li><a href="#">Política de privacidad</a></li>
@@ -451,6 +535,7 @@
             </div>
         </div>
 
+        <!-- Texto de derechos de autor (clase pie-copy) -->
         <p class="pie-copy">© 2026 EcoMarket. Todos los derechos reservados.</p>
     </footer>
 </body>
